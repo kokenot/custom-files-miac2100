@@ -1,0 +1,24 @@
+
+config system
+	option hostname 'ImmortalWrt'
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option compat_version '1.1'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '5'
+	option zonename 'Asia/Kuala Lumpur'
+	option timezone '<+08>-8'
+
+config timeserver 'ntp'
+	list server 'time.google.com'
+	list server 'time.cloudflare.com'
+
+config led 'led_wan_blue'
+	option name 'WAN (blue)'
+	option sysfs 'blue:wan'
+	option trigger 'netdev'
+	option mode 'link tx rx'
+	option dev 'wan'
+

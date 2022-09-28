@@ -1,0 +1,13 @@
+
+config ubootenv
+	option dev '/dev/mtd1'
+	option offset '0x0'
+	option envsize '0x1000'
+	option secsize '0x20000'
+
+config ubootsys
+	option dev '/dev/mtd2'
+	option offset '0x0'
+	option envsize '0x4000'
+	option secsize '0x20000'
+
